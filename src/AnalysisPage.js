@@ -39,7 +39,7 @@ export default function AnalysisPage({ selectedFile, setSelectedFile, patientNam
     formData.append('patient_name', patientName);
     formData.append('notes', notes);
     try {
-      const response = await fetch('http://tb-detector-api-ghg4dccpd8akg7hp.indonesiacentral-01.azurewebsites.net/predict', {
+      const response = await fetch('https://tb-detector-api-ghg4dccpd8akg7hp.indonesiacentral-01.azurewebsites.net/predict', {
         method: 'POST',
         body: formData,
       });
